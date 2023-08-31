@@ -23,6 +23,11 @@
     // set the counter text
     counter.textContent = `${days}:${hours}:${minutes}:${seconds}`;
 
+    // update the title
+    const title = document.querySelector('title');
+    title.textContent = `BF&thinsp;/&thinsp;45: ${days}:${hours}:${minutes}:${seconds}`;
+
+
     // remove hidden class from the wrapper
     const wrapper = document.querySelector(selectors.wrapper);
     wrapper.classList.remove('is-hidden');

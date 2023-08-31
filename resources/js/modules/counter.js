@@ -25,7 +25,7 @@
 
     // update the title
     const title = document.querySelector('title');
-    title.textContent = `BF&thinsp;/&thinsp;45: ${days}:${hours}:${minutes}:${seconds}`;
+    title.textContent = `BF / 45: ${days}:${hours}:${minutes}:${seconds}`;
 
 
     // remove hidden class from the wrapper

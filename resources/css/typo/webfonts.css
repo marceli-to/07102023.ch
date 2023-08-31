@@ -1,0 +1,18 @@
+/**
+ * Typography - Webfonts
+ * -----------------------------------------------------------------------------
+ */
+
+ @font-face {
+  font-family: 'VolteSemibold';
+  src: local('Volte Semibold'), local('Volte-Semibold'),url('../fonts/Volte-Semibold.woff2') format('woff2'), url('../fonts/Volte-Semibold.woff') format('woff'), url('../fonts/Volte-Semibold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VolteBold';
+  src: local('Volte Bold'), local('Volte-Bold'), url('../fonts/Volte-Bold.woff2') format('woff2'), url('../fonts/Volte-Bold.woff') format('woff'), url('../fonts/Volte-Bold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

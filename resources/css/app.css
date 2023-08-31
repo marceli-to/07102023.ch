@@ -1,0 +1,17 @@
+@import "typo/webfonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply antialiased bg-orange h-full;
+}
+
+main > div {
+  @apply opacity-100 transition-opacity duration-1000;
+}
+
+main > div.is-hidden {
+  @apply opacity-0;
+}

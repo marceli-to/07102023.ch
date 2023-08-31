@@ -1,0 +1,36 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-2f0901d6.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/css/fonts/Volte-Bold.ttf": {
+    "file": "assets/Volte-Bold-370cba5e.ttf",
+    "src": "resources/css/fonts/Volte-Bold.ttf"
+  },
+  "resources/css/fonts/Volte-Bold.woff": {
+    "file": "assets/Volte-Bold-886b3c1c.woff",
+    "src": "resources/css/fonts/Volte-Bold.woff"
+  },
+  "resources/css/fonts/Volte-Bold.woff2": {
+    "file": "assets/Volte-Bold-48003b1d.woff2",
+    "src": "resources/css/fonts/Volte-Bold.woff2"
+  },
+  "resources/css/fonts/Volte-Semibold.ttf": {
+    "file": "assets/Volte-Semibold-bb2c9a54.ttf",
+    "src": "resources/css/fonts/Volte-Semibold.ttf"
+  },
+  "resources/css/fonts/Volte-Semibold.woff": {
+    "file": "assets/Volte-Semibold-4216af4d.woff",
+    "src": "resources/css/fonts/Volte-Semibold.woff"
+  },
+  "resources/css/fonts/Volte-Semibold.woff2": {
+    "file": "assets/Volte-Semibold-9ddde74e.woff2",
+    "src": "resources/css/fonts/Volte-Semibold.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-4bbb805b.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}

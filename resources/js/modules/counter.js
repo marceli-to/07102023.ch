@@ -20,14 +20,9 @@
     const seconds = Math.floor((difference / 1000) % 60);
     // get the counter element
     const counter = document.querySelector(selectors.counter);
-    const title = document.querySelector('title');
 
     // set the counter text
     counter.textContent = `${days}:${hours}:${minutes}:${seconds}`;
-
-    // update the title
-    title.textContent = `BF / 45: ${days}:${hours}:${minutes}:${seconds}`;
-
 
     // remove hidden class from the wrapper
     const wrapper = document.querySelector(selectors.wrapper);

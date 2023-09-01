@@ -7,7 +7,7 @@
 
   const init = () => {
     // update the counter every second
-    setInterval(updateCounter, 1000);
+    //setInterval(updateCounter, 1000);
   };
 
   const updateCounter = () => {

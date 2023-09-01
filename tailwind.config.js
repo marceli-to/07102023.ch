@@ -22,7 +22,7 @@ export default {
       },
 
       fontSize: {
-        'md': '1.9rem', // 25px
+        'md': '2rem', // 25px
         'lg': '3.25rem', // 50px
         'xl': '6.5rem', // 100px
       },

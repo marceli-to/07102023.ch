@@ -17,7 +17,20 @@
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((difference / (1000 * 60)) % 60);
+
+    // add a leading zero to the minutes if it's less than 10
+    if (minutes < 10) {
+      minutes = `0${minutes}`;
+    }
+
+
     const seconds = Math.floor((difference / 1000) % 60);
+
+    // add a leading zero to the seconds if it's less than 10
+    if (seconds < 10) {
+      seconds = `0${seconds}`;
+    }
+
     // get the counter element
     const counter = document.querySelector(selectors.counter);
 

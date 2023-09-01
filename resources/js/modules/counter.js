@@ -16,7 +16,10 @@
     // calculate the number of days, hours, minutes and seconds from the difference
     let days = Math.floor(difference / (1000 * 60 * 60 * 24));
     let hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-    
+    if (hours < 10) {
+      hours = `0${hours}`;
+    }
+
     let minutes = Math.floor((difference / (1000 * 60)) % 60);
     // add a leading zero to the minutes if it's less than 10
     if (minutes < 10) {

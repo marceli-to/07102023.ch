@@ -14,18 +14,16 @@
     // calculate the difference between current timestamp and the timestamp for the 7th of October 2023 at 7pm
     const difference = Date.parse('2023-10-07T19:00:00') - Date.now();
     // calculate the number of days, hours, minutes and seconds from the difference
-    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((difference / (1000 * 60)) % 60);
-
+    let days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+    
+    let minutes = Math.floor((difference / (1000 * 60)) % 60);
     // add a leading zero to the minutes if it's less than 10
     if (minutes < 10) {
       minutes = `0${minutes}`;
     }
 
-
-    const seconds = Math.floor((difference / 1000) % 60);
-
+    let seconds = Math.floor((difference / 1000) % 60);
     // add a leading zero to the seconds if it's less than 10
     if (seconds < 10) {
       seconds = `0${seconds}`;

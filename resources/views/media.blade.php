@@ -18,7 +18,7 @@
 @vite('resources/js/app.js')
 @vite('resources/css/app.css')
 </head>
-<body class="bg-white">
+<body class="bg-white px-16">
   <main role="main" class="flex">
     <div class="flex">
       @livewire('media-listing')

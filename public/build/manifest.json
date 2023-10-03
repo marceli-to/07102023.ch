@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-d4e4b008.css",
+    "file": "assets/app-c172f533.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -29,7 +29,7 @@
     "src": "resources/css/fonts/Volte-Semibold.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-45f60312.js",
+    "file": "assets/app-e3843d64.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

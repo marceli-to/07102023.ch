@@ -44,6 +44,10 @@
   };
 
 
-  init();
-  
+  // init if we have a counter element
+  const counter = document.querySelector(selectors.counter);
+  if (counter) {
+    init();
+  }
+ 
 })();

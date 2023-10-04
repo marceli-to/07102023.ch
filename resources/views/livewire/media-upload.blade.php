@@ -39,7 +39,7 @@
       
           @if ($this->getErrorBag())
             <div class="absolute top-0 left-0 z-50 p-10 font-semibold text-orange text-base w-full">
-              <ul class="list-none px-16">
+              <ul class="list-none">
                 @foreach($this->getErrorBag()->get('file') as $error)
                   <li class="block mb-8">
                     {{ __($error) }}

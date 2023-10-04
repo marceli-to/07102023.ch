@@ -4,7 +4,7 @@
     @php $type = \Str::before($file->getMimeType(), '/') @endphp
     @if ($type === 'video')
       <x-figure class="w-full h-full">
-        <video controls class="block w-full h-auto object-contain">
+        <video controls class="block w-full h-full object-contain">
           <source src="{{ $file->temporaryUrl() }}" type="{{ $file->getMimeType() }}">
         </video>
       </x-figure>

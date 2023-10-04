@@ -4,7 +4,7 @@
     @foreach($files as $file)
       @if ($file['type'] === 'video')
         <x-figure class="mb-16 md:mb-0 md:col-span-6 xl:col-span-3">
-          <video controls class="block w-full h-auto object-contain" loading="lazy">
+          <video controls class="block w-full h-full object-contain" loading="lazy">
             <source src="{{ $file['url'] }}" type="{{ $file['mime'] }}">
           </video>
         </x-figure>
@@ -16,7 +16,7 @@
             src="{{ $file['resizable'] ? '/img/cache/large/' . $file['name'] : $file['url'] }}" 
             width="{{ $file['width'] }}" 
             height="{{ $file['height'] }}" 
-            class="block w-full h-auto object-contain" 
+            class="block w-full h-full object-contain" 
             loading="lazy">
         </x-figure>
       @endif

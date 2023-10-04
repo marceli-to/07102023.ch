@@ -14,9 +14,13 @@
         <img src="{{ $file->temporaryUrl() }}" class="block w-full h-full object-contain">
       </x-figure>
     @endif
-    <div class="w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-16 justify-between">
-      <button type="button" class="bg-green-400 w-1/2 px-12 py-3 text-white" wire:click="save">Save</button>
-      <button type="button" class="bg-red-400 w-1/2 px-12 py-3 text-white" wire:click="delete">Delete</button>
+    <div class="w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-36 justify-between">
+      <button type="button" wire:click="save">
+        <x-save class="w-72 h-auto" />
+      </button>
+      <button type="button" wire:click="delete">
+        <x-delete class="w-64 h-auto" />
+      </button>
     </div>
   @else  
     <form class="flex flex-col grow h-full justify-center items-center">

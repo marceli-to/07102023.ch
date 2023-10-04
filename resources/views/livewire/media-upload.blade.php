@@ -8,9 +8,9 @@
 
   @if ($this->getErrorBag())
     <div class="absolute top-0 left-0 z-50 p-10 font-semibold text-orange text-base w-full">
-      <ul class="list-disc px-16">
+      <ul class="list-none px-16">
         @foreach($this->getErrorBag()->get('file') as $error)
-          <li class="list-item">
+          <li class="block mb-8">
             {{ __($error) }}
           </li>
         @endforeach

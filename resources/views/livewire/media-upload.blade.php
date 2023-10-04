@@ -1,18 +1,17 @@
 <div class="mb-16 md:mb-0 md:col-span-6 xl:col-span-3 aspect-square flex items-center justify-center relative">
 
-
   @if ($file) 
     @php $type = \Str::before($file->getMimeType(), '/') @endphp
     @if ($type === 'video')
       <x-figure class="w-full h-full">
-        <video controls class="block w-full h-auto">
+        <video controls class="block w-full h-auto object-contain">
           <source src="{{ $file->temporaryUrl() }}" type="{{ $file->getMimeType() }}">
         </video>
       </x-figure>
     @endif
     @if ($type === 'image')
       <x-figure class="w-full h-ful">
-        <img src="{{ $file->temporaryUrl() }}" class="block w-full h-auto">
+        <img src="{{ $file->temporaryUrl() }}" class="block w-full h-full object-contain">
       </x-figure>
     @endif
     <div class="w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-16 justify-between">

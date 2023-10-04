@@ -16,7 +16,7 @@
             src="{{ $file['resizable'] ? '/img/cache/large/' . $file['name'] : $file['url'] }}" 
             width="{{ $file['width'] }}" 
             height="{{ $file['height'] }}" 
-            class="block w-full h-auto object-contain bg-gray-50" 
+            class="block w-full h-auto object-contain" 
             loading="lazy">
         </x-figure>
       @endif

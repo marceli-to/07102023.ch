@@ -57,7 +57,7 @@
               class="sr-only" 
               id="fileUpload" 
               wire:model.change="file"
-              accept="video/mp4,video/webm,video/ogg,image/png,image/jpeg,image/gif,image/webp"
+              accept="image/png,image/jpeg,image/gif,image/webp"
               x-on:change="file = $event.target.file ? Object.values($event.target.file) : null">
             <div x-show="!file" class="block bg-white w-full h-full">
               <x-plus class="w-82 h-87 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />

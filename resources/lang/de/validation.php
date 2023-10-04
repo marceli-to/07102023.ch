@@ -82,7 +82,7 @@ return [
         'array'   => ':attribute darf nicht mehr als :max Elemente haben.',
     ],
     'mimes'     => ':attribute muss den Dateityp :values haben.',
-    'mimetypes' => 'Datei muss den Dateityp :values haben.',
+    'mimetypes' => 'Datei muss den Dateityp jpg, png, gif, mp4, webm oder ogg haben.',
     'min'       => [
         'numeric' => ':attribute muss mindestens :min sein.',
         'file'    => ':attribute muss mindestens :min Kilobytes gross sein.',

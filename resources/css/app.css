@@ -17,18 +17,15 @@ main > div.is-hidden {
 }
 
 .spinner {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
+  @apply inline-block w-96 h-96;
 }
 .spinner:after {
   content: " ";
   display: block;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
-  border: 5px solid #ff5a00;
+  border: 17px solid #ff5a00;
   border-color: #ff5a00 transparent #ff5a00 transparent;
   animation: spinner 1.2s linear infinite;
 }

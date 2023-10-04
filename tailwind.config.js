@@ -17,11 +17,14 @@ export default {
       },
 
       fontFamily: {
-        'bold': ['VolteBold', ...defaultTheme.fontFamily.sans],
+        'medium': ['VolteMedium', ...defaultTheme.fontFamily.sans],
         'semibold': ['VolteSemibold', ...defaultTheme.fontFamily.sans],
+        'bold': ['VolteBold', ...defaultTheme.fontFamily.sans],
       },
 
       fontSize: {
+        'sm': '1rem', // 16px
+        'base': '1.125rem', // 18px
         'md': '2rem', // 25px
         'lg': '3.25rem', // 50px
         'xl': '6.5rem', // 100px

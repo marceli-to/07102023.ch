@@ -1,19 +1,24 @@
-<div class="grid grid-cols-12 gap-16">
+<div class="md:grid md:grid-cols-12 md:gap-16">
   @livewire('media-upload')
   @if ($files)
     @foreach($files as $file)
       @if ($file['type'] === 'video')
-        <figure class="col-span-3 aspect-square flex items-center justify-center bg-green-200">
-          <video controls class="block w-full h-full object-contain">
+        <x-figure class="mb-16 md:mb-0 md:col-span-6 xl:col-span-3">
+          <video controls class="block w-full h-auto object-contain" loading="lazy">
             <source src="{{ $file['url'] }}" type="{{ $file['mime'] }}">
           </video>
-        </figure>
+        </x-figure>
       @endif
 
       @if ($file['type'] === 'image')
-        <figure class="col-span-3 aspect-square flex items-center justify-center bg-green-200">
-          <img src="{{ $file['url'] }}" class="block w-full h-full object-contain">
-        </figure>
+        <x-figure class="mb-16 md:mb-0 md:col-span-6 xl:col-span-3">
+          <img 
+            src="{{ $file['resizable'] ? '/img/cache/large/' . $file['name'] : $file['url'] }}" 
+            width="{{ $file['width'] }}" 
+            height="{{ $file['height'] }}" 
+            class="block w-full h-auto object-contain bg-gray-50" 
+            loading="lazy">
+        </x-figure>
       @endif
 
     @endforeach

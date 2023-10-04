@@ -23,9 +23,12 @@ class MediaListing extends Component
         'last_modified' => \Storage::lastModified($file),
         'type' => \Str::before(\Storage::mimeType($file), '/'),
         'mime' => \Storage::mimeType($file),
+        'resizable' => in_array(\Storage::mimeType($file), Media::RESIZABLE_MIMETYPES),
+        'width' => \Str::contains(\Storage::mimeType($file), 'image') ? getimagesize(\Storage::path($file))[0] : null,
+        'height' => \Str::contains(\Storage::mimeType($file), 'image') ? getimagesize(\Storage::path($file))[1] : null,
       ];
     }, $files);
-    
+
     // Sort the files by last modified date
     usort($files, function($a, $b) {
       return $b['last_modified'] <=> $a['last_modified'];

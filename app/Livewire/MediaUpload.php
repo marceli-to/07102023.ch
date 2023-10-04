@@ -20,7 +20,6 @@ class MediaUpload extends Component
     {
       \Storage::makeDirectory('public/uploads');
     }
-
     $this->validate();
     $this->file->store('public/uploads');
     $this->reset();

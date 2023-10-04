@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-a6072963.css",
+    "file": "assets/app-a3dcf6b7.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -15,6 +15,18 @@
   "resources/css/fonts/Volte-Bold.woff2": {
     "file": "assets/Volte-Bold-48003b1d.woff2",
     "src": "resources/css/fonts/Volte-Bold.woff2"
+  },
+  "resources/css/fonts/Volte-Medium.ttf": {
+    "file": "assets/Volte-Medium-528a2656.ttf",
+    "src": "resources/css/fonts/Volte-Medium.ttf"
+  },
+  "resources/css/fonts/Volte-Medium.woff": {
+    "file": "assets/Volte-Medium-1afa8a03.woff",
+    "src": "resources/css/fonts/Volte-Medium.woff"
+  },
+  "resources/css/fonts/Volte-Medium.woff2": {
+    "file": "assets/Volte-Medium-d3133821.woff2",
+    "src": "resources/css/fonts/Volte-Medium.woff2"
   },
   "resources/css/fonts/Volte-Semibold.ttf": {
     "file": "assets/Volte-Semibold-bb2c9a54.ttf",

@@ -19,4 +19,9 @@ class Media extends Model
     'image/gif',
     'image/webp',
   ];
+
+  const RESIZABLE_MIMETYPES = [
+    'image/png',
+    'image/jpeg',
+  ];
 }

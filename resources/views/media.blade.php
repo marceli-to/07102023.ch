@@ -18,11 +18,9 @@
 @vite('resources/js/app.js')
 @vite('resources/css/app.css')
 </head>
-<body class="bg-white px-16">
-  <main role="main" class="flex">
-    <div class="flex">
-      @livewire('media-listing')
-    </div>
+<body class="bg-white p-16 xl:p-32">
+  <main role="main" class="w-full">
+    @livewire('media-listing')
   </main>
 </body>
 <!-- made with ❤ by wbg.ch & marceli.to -->

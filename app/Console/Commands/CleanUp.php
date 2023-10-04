@@ -43,7 +43,7 @@ class Cleanup extends Command
     // Folder: uploads/temp
     $files = \Storage::listContents('tmp');
     collect($files)->each(function($file) {
-      if ($file->lastModified() < now()->subMinutes(5)->getTimestamp()) {
+      if ($file->lastModified() < now()->subMinutes(15)->getTimestamp()) {
         \Storage::delete($file->path());
       }
     });

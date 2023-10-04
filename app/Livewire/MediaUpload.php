@@ -10,7 +10,7 @@ class MediaUpload extends Component
 {
   use WithFileUploads;
  
-  #[Rule('required|mimetypes:video/mp4,video/webm,video/ogg,video/3gpp,video/x-matroska,video/x-ms-wmv,video/x-flv,image/png,image/jpeg,image/gif,image/webp|max:64000')]
+  #[Rule('required|mimetypes:video/mp4,video/webm,video/ogg,image/png,image/jpeg,image/gif,image/webp|max:64000')]
   public $file;
 
   public function save()

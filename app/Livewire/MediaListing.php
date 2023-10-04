@@ -10,7 +10,7 @@ class MediaListing extends Component
     // Get all files from storage/app/public/uploads
     $files = \Storage::files('public/uploads');
 
-    // Filter out any non-image files (allowed are: video/mp4,video/webm,video/ogg,video/3gpp,video/quicktime,video/x-matroska,video/x-ms-wmv,video/x-flv,image/png,image/jpeg,image/gif,image/webp)
+    // Filter out any non-image files
     $files = array_filter($files, function($file) {
       return in_array(\Storage::mimeType($file), Media::MIMETYPES);
     });

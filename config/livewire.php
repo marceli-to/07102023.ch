@@ -65,7 +65,7 @@ return [
 
     'temporary_file_upload' => [
         'disk' => null,        // Example: 'local', 's3'              | Default: 'default'
-        'rules' => 'mimetypes:video/mp4,video/webm,video/ogg,video/3gpp,video/quicktime,video/x-matroska,video/x-ms-wmv,video/x-flv,image/png,image/jpeg,image/gif,image/webp|max:64000',       // Example: ['file', 'mimes:png,jpg']  | Default: ['required', 'file', 'max:12288'] (12MB)
+        'rules' => 'mimetypes:video/mp4,video/webm,video/ogg,video/3gpp,video/x-matroska,video/x-ms-wmv,video/x-flv,image/png,image/jpeg,image/gif,image/webp|max:64000',       // Example: ['file', 'mimes:png,jpg']  | Default: ['required', 'file', 'max:12288'] (12MB)
         'directory' => 'tmp',   // Example: 'tmp'                      | Default: 'livewire-tmp'
         'middleware' => null,  // Example: 'throttle:5,1'             | Default: 'throttle:60,1'
         'preview_mimes' => [   // Supported file types for temporary pre-signed file URLs...

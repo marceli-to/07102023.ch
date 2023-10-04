@@ -10,7 +10,6 @@ class Media extends Model
     'video/webm',
     'video/ogg',
     'video/3gpp',
-    'video/quicktime',
     'video/x-matroska',
     'video/x-ms-wmv',
     'video/x-flv',

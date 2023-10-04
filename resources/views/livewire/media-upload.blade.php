@@ -6,6 +6,18 @@
     </span>
   @endif
 
+  @if ($this->getErrorBag())
+    <div class="absolute top-0 left-0 z-50 p-10 font-semibold text-orange text-base w-full">
+      <ul class="list-disc px-16">
+        @foreach($this->getErrorBag()->get('file') as $error)
+          <li class="list-item">
+            {{ __($error) }}
+          </li>
+        @endforeach
+      </ul>
+    </div>
+  @endif
+
   @if ($file) 
     @php $type = \Str::before($file->getMimeType(), '/') @endphp
     @if ($type === 'video')
@@ -40,7 +52,7 @@
               type="file" 
               class="sr-only" 
               id="fileUpload" 
-              wire:model="file"
+              wire:model.change="file"
               accept="video/*, image/*"
               x-on:change="file = $event.target.file ? Object.values($event.target.file) : null">
             <div x-show="!file" class="block bg-white w-full h-full">
